@@ -63,7 +63,7 @@ const CustomerCard = ({
             <EditIcon />
           </IconButton>
           <IconButton
-            aria-label="Excluir cadastro"
+            aria-label="Remover cadastro"
             onClick={handleRemoveCustomer}
           >
             <DeleteIcon />
@@ -75,7 +75,7 @@ const CustomerCard = ({
         onClose={handleToggleOpenModal}
         onConfirm={() => handleConfirmModal(id)}
         title="Deseja realmente excluir este cadastro?"
-        titleMessage="Ao confirmar, não será possível reverter o processo."
+        titleMessage="Ao confirmar não será possível reverter o processo."
       />
     </>
   );

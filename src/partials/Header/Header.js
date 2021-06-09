@@ -18,6 +18,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import PersonIcon from '@material-ui/icons/Person';
+import CollectionsIcon from '@material-ui/icons/Collections';
+import AddIcon from '@material-ui/icons/Add';
 
 import useStyles from './Header.style';
 
@@ -71,6 +73,18 @@ const Header = () => {
               <PersonAddIcon />
             </ListItemIcon>
             <ListItemText>Cadastro de Clientes</ListItemText>
+          </ListItem>
+          <ListItem button onClick={() => handleMenuClick('/products')}>
+            <ListItemIcon>
+              <CollectionsIcon />
+            </ListItemIcon>
+            <ListItemText>Listagem de Produtos</ListItemText>
+          </ListItem>
+          <ListItem button onClick={() => handleMenuClick('/products/add')}>
+            <ListItemIcon>
+              <AddIcon />
+            </ListItemIcon>
+            <ListItemText>Cadastro de Produtos</ListItemText>
           </ListItem>
         </List>
       </Drawer>
